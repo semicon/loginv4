@@ -1,0 +1,126 @@
+<!--Design by guruchian.blogspot.com-->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>ตรวจสอบผลการเรียน</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'K2D', sans-serif;
+        }
+        html{
+            background: url("https://img.freepik.com/free-photo/education-day-arrangement-table-with-clock_23-2148721271.jpg")  no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100vh;   
+        }
+        body{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background-size: cover;
+        }
+        .header{
+            padding: 50px 30px 50px 30px;
+            color: rgb(247, 233, 233);
+        }
+        .content{
+            margin-bottom: 50px;
+            width: 330px;
+            border-radius: 10px;
+            padding: 30px 30px;
+            box-shadow: -3px -3px 9px #f364cfa2,
+                        3px 3px 7px rgba(241, 76, 159, 0.671);
+        }
+        .content .text{
+            font-size: 25px;
+            font-weight: 400;
+            margin-bottom: 35px;
+            color: rgb(247, 233, 233);
+        }
+        .content .field{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .field input{
+            height: 100%;
+            width: 100%;
+            padding-left: 45px;
+            font-size: 18px;
+            outline: none;
+            border: none;
+            color: #e0d2d2;
+            border: 1px solid rgba(255, 255, 255, 0.438);
+            border-radius: 8px;
+            background: rgba(105, 105, 105, 0);    
+        }
+        .field input::placeholder{
+            color: #e0d2d2a6;
+        }
+        .field:nth-child(2){
+            margin-top: 20px;
+        }
+        .field span{
+            position: absolute;
+            width: 50px;
+            line-height: 50px;
+            color: #ffffff;
+        }
+        button{
+            margin: 25px 0 0 0;
+            width: 100%;
+            height: 50px;
+            color: rgb(238, 226, 226);
+            font-size: 18px;
+            font-weight: 400;
+            border: 2px solid rgba(255, 255, 255, 0.438);
+            border-radius: 8px;
+            background: rgba(105, 105, 105, 0);
+            margin-top: 40px;
+            outline: none;
+            cursor: pointer;
+            border-radius: 8px;      
+        }    
+        button:hover,
+        .icon-button span:hover{
+            background-color: #babecc8c;
+        }
+ 
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="https://www.logo-th.com/wp-content/uploads/2018/08/%E0%B8%AA%E0%B8%9E%E0%B8%90.png" style="width:120px; height:auto; padding-bottom: 20px; ">   
+    <h1>ตรวจสอบผลการเรียน ภาคเรียนที่ 1/2565</h1>
+</div>
+<div class="content">
+ <div class="text">เข้าสู่ระบบ</div>
+  <form action="#">
+    <div class="field">
+      <span class="fa fa-user"></span>
+      <input type="text" placeholder="เลขประจำตัวนักเรียน" required>
+   
+    </div>
+    <div class="field">
+      <span class="fa fa-lock"></span>
+      <input type="password" placeholder="เลขประชาชน 13 หลัก">
+      
+    </div>
+    
+    <button>ลงชื่อเข้าใช้</button>
+  </form>
+</div>
+
+</body>
+</html>
